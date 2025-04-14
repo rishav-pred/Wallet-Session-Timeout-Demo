@@ -1,6 +1,6 @@
 const express = require('express');
 const cors = require('cors');
-const cookieSession = require('cookie-session');
+const session = require('express-session');
 const ethers = require('ethers');
 
 const app = express();
@@ -13,7 +13,7 @@ app.use(cors({
 }));
 app.use(express.json());
 
-app.use(cookieSession({
+app.use(session({
   name: 'wallet-session',
   secret: 'secure-random-secret',
   maxAge: 5 * 60 * 1000, // 5 minutes
