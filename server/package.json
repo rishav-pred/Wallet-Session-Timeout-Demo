@@ -10,9 +10,9 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "cookie-session": "^2.1.0",
     "cors": "^2.8.5",
     "ethers": "^6.13.5",
+    "expi-session": "^3.17.1",
     "express": "^5.1.0"
   }
 }
